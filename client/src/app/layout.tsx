@@ -32,7 +32,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${geistRoboto.variable} antialiased`}
       >
-        <div className="h-screen w-screen bg-greyblue px-40">{children}</div>
+        <div className="h-screen w-screen bg-greyblue px-40 overflow-y-scroll">
+          {children}
+        </div>
       </body>
     </html>
   );
