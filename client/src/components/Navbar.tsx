@@ -4,8 +4,10 @@ import { Bell, ChevronDown, Plus, SearchIcon } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+  const router = useRouter();
   return (
     <nav className="h-14 w-full flex items-center justify-between">
       <Logo />
@@ -13,7 +15,10 @@ export default function Navbar() {
       <div className="w-1/2 h-full flex gap-1 items-center text-white pl-5">
         <Bell strokeWidth={1} size={20} />
         <Profile />
-        <Button className="bg-transparent hover:bg-transparent cursor-pointer text-white/50 hover:text-white text-[15px] font-bold px-1">
+        <Button
+          className="bg-transparent hover:bg-transparent cursor-pointer text-white/50 hover:text-white text-[15px] font-bold px-1"
+          onClick={() => router.push("games")}
+        >
           Games
         </Button>
         <Search />
