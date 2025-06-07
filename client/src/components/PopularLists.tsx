@@ -1,10 +1,9 @@
 "use client";
-import { cn } from "@/lib/utils";
 import { GameCard } from "./GameCard";
 
 export default function PopularLists() {
   return (
-    <div className="h-max w-full border border-pink-600">
+    <div className="h-max w-full">
       <h1 className="text-lg font-light font-roboto text-lightblue h-10 flex items-center">
         Popular Lists
       </h1>
