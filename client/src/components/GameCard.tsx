@@ -10,6 +10,7 @@ const gameCardVariant = cva("rounded-sm border border-white cursor-pointer", {
       default: "",
     },
     size: {
+      xxl: "h-[227px] w-[168px]",
       xl: "h-[211px] w-[156px]",
       sm: "h-[64px] w-[46px]",
       lg: "h-[155px] w-[114px]",
